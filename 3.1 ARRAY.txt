@@ -48,12 +48,14 @@ ARAY NELLA CHIAMATA DI UNA FUNZIONE
 ARRAY MULLTI DIMENSIONALE:
 				int nome[n][m];
 
+
 INIZZIALIZAZIONE ARRAY CON PIU INDICI:
 
 	int b[2][2] = { {1,2} , {3,4} };
 
 	N.B. int b[2][2] = { {1} , {3,4} };      //inizzializza b[0][0] = 1  
 							        b[0][1] = 0
+
 	
 -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
 ARAY MULTIDIMENSIONALE NELLA CHIAMATA DI UNA FUNZIONE 
@@ -116,3 +118,16 @@ PIU PAROLE IN UNA MATRICE
         		i++;			//incremento contatore
     		}
     		printf("\n");
+
+
+---------------------------------------------------------------------------
+SAPERE LA DIMENSIONE DI UNA MATRICE mULTIDIMENSIONALE 
+
+	int tab4[][][]= {{{1,2,4} ,{3,4,5}, {3,4,5}, {3,4,5}}, {{1,2,4} ,{3,4,5}, {3,4,5}, {3,4,5}}};	//esempio di array tridimensionale
+	
+	tab.length 	//fornisce il numero di righe
+	
+	tab[0].length 	//fornisce il numero di elementi della riga 0
+
+	tab[0][0].length 	//fornisce il numero di profondita di elementi nella riga 0 a posizione 0 
+

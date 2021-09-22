@@ -2,7 +2,7 @@ printf()	Fa stampare sullo schermo la stringa di caratteri
 			compresa tra le virgolette. 
 
 
-scanf()		Legge un valore dallo Standerd Input
+scanf()		Legge un valore dallo Standard Input
 
 -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
 SCANF_S()
@@ -182,6 +182,13 @@ SINISTRA:      |hello     |7         |a         |1.230000  |
 
 SPECIFICATORI DI CONVERSIONE DI SCANF()
 
+NB!!!!! per saltare una stringa o un numero basta mettere tra 
+	il % e il carattere di conversione (d s x) L'ASTERISCO *
+
+	%*s 	non leggo una stringa
+	%*d 	non leggo un numero 
+
+
 	& 	Si usa per fornire a scanf() il riferimento alla locazione di 		memoria della variabile,
 !!!!!!! N.B.  se ci si riferisce a un ARRAY DI CARATTERI & VA OMESSO 
 	
@@ -220,9 +227,13 @@ NUMERI IN VIRGOLA MOBILE
 
 -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
 CARATTERI E STRINGHE
-	%c 	Leggi un carattere. L’argomento corrispondente è un puntatore                 a char; non viene aggiunto alcun carattere nullo ('\0').
+	%c 	Leggi un carattere. L’argomento corrispondente è un puntatore
+                 a char; non viene aggiunto alcun carattere nullo ('\0').
 
-	%s 	Leggi una stringa. L’argomento corrispondente è un puntatore 		a un array di tipo char, grande abbastanza da contenere la 		stringa e un carattere nullo di terminazione ('\0') che viene 		aggiunto automaticamente.
+	%s 	Leggi una stringa. L’argomento corrispondente è un puntatore
+		a un array di tipo char, grande abbastanza da contenere la 
+		stringa e un carattere nullo di terminazione ('\0') che viene
+ 		aggiunto automaticamente.
 
 -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
 INSIEME DI SCANSIONE 
@@ -235,7 +246,8 @@ ALTRI
 	%p 	Leggi un indirizzo nello stesso formato prodotto da 
 		un’istruzione printf con lo specificatore di formato %p.
 
-	n 	Memorizza il numero di caratteri letti fino a quel punto 		nella chiamata corrente a scanf. 
+	n 	Memorizza il numero di caratteri letti fino a quel punto
+ 		nella chiamata corrente a scanf. 
 		L’argomento corrispondente è un puntatore a un int.
 
 	% 	Ignora un segno di percentuale (%) nell’input.
@@ -247,9 +259,11 @@ INSIEMI DI SCANSIONE CON SCANF()
 Insieme di caratteri racchiusi fra parentesi quadre,[ ], e preceduti 
 	   da un segno di percentuale nella stringa di controllo del formato.
  
-Esamina i caratteri nello stream di input, cercando solamente i caratteri              corrispondenti ai caratteri contenuti nell’insieme di scansione. 
+Esamina i caratteri nello stream di input, cercando solamente i caratteri
+              corrispondenti ai caratteri contenuti nell’insieme di scansione. 
 
-Ogni volta che viene trovato un carattere, viene memorizzato nell’argomento                         corrispondente: un puntatore a un array di caratteri.
+Ogni volta che viene trovato un carattere, viene memorizzato nell’argomento
+                         corrispondente: un puntatore a un array di caratteri.
 
 La lettura di caratteri TERMINA quando si incontra un
 			       carattere non contenuto nell’insieme di scansione.

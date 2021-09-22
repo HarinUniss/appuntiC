@@ -204,7 +204,8 @@ INIZIALIZZAZIONE
 -----------------------------------------------------------------------------
 *****************************************************************************
 CAMPI DI BIT
-I campi di bit permettono un migliore utilizzo della memoria, memorizzando i 				    dati nel minimo numero di bit necessario. 
+I campi di bit permettono un migliore utilizzo della memoria, memorizzando i
+ 				    dati nel minimo numero di bit necessario. 
 
 struct bitCarta{
 
@@ -262,6 +263,7 @@ CREARE UNA VARIABILE DI TIPO ENUMERATORE MESI
 
 NB QUANDO VADO AD INIZZIALIZZARE GLI ELEMENTI DI UN ENUMERATORE POSSO ANCHE FALO
 MANUALMENTE SENZA CHE IL PC LO FACCIA IN MODO AUTOMATICO 
+
 es:
 
 	enum mesi{

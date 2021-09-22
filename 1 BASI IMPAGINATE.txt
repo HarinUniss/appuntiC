@@ -16,7 +16,7 @@ TIPI PRIMITIVI
 	float	Numero reale	      (4 byte)	+/-(1e-38 : 1e+38)
 	double	Numero reale “lungo”  (8 byte)	+/-(2e-308 : 1e+308)
 
-per inizializzare una vatiabile carattere con la lettera a
+per inizializzare una variabile carattere con la lettera a
     
     char nome = 'a';
 
@@ -139,6 +139,13 @@ if (/* condition */){
 }else{
     /* code */
 }
+
+----------------------------------------
+IF -ELSE COMPRESSO
+( condizione) ? (se è vera) : (se è falsa);
+
+
+
 ----------------------------------------
 
 Finche i è ... fai questo e poi i++

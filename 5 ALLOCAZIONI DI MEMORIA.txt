@@ -11,7 +11,8 @@ Richiesta di lasciare dello spazzioin memoriadiuna dimensione specifica
                                memoria della dimensione di un char (dimensione
                  	 	 varia in base all'architettura)
 
-   malloc(sizeof(short)) //cihede alcalcolatore di garantire uno spazio 			           in memoria della dimensione di un short 
+   malloc(sizeof(short)) //cihede alcalcolatore di garantire uno spazio
+ 			           in memoria della dimensione di un short 
 			   (dimensione varia in base all'architettura)
 
    malloc(sizeof(int))	//cihede alcalcolatore di garantire uno spazio in
@@ -61,7 +62,10 @@ RICHIEDERE L'ALLOCCAMENTO IN MEMORIA E CREARE UN PUNTATORE CHE PUNTA AL PRIMO
 -----------------------------------------------------------------------------
 DISALOCAZIONE MEMORIA
 
-   int * A = malloc(sizeof(int));    //creo un allocazione di memoria e un                                        puntatore che punta all'indirizzo del 				       primo elemento.
+   int * A = malloc(sizeof(int));    //creo un allocazione di memoria e un 
+                                       puntatore che punta all'indirizzo del 
+
+				       primo elemento.
 
    free(A);   //leggo il contenuto di A, vado a tale indirizzo ed DISALLOCCO 		
 		la memoria che era stata allocata. 
